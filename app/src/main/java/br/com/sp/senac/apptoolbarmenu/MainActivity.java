@@ -25,9 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
+
+        getActionBar().setTitle("Senac Largo Treze");
+        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
     }
 
-    //
     //O menu fui Inflado
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
