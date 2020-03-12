@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -26,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
 
-        getActionBar().setTitle("Senac Largo Treze");
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        //getActionBar().setTitle("Senac Largo Treze");
+        //getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
     }
 
     //O menu fui Inflado
@@ -62,10 +63,14 @@ public class MainActivity extends AppCompatActivity {
                         "Clique no Buscar!!!",
                         Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.mAbrir:
+                startActivity(new Intent(getApplicationContext(),SubMenu_Activity.class));
+                break;
             case R.id.mSair:
-                Toast.makeText(getApplicationContext(),
-                        "Clique no Sair!!!",
-                        Toast.LENGTH_SHORT).show();
+                finish();
+                break;
+            case R.id.mAbrirGrupo:
+                startActivity(new Intent(getApplicationContext(),GrupoMenu_Activity.class));
                 break;
 
         }

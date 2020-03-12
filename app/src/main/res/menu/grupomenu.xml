@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:id="@+id/gpMenu">
+    <group
+        android:id="@+id/gpMenu"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/mGpAlterar"
             android:title="Alterar" />
@@ -11,5 +13,23 @@
     </group>
     <item
         android:id="@+id/mGpSair"
-        android:title="Sair"
+        android:title="Sair" />
+    <item android:title="outros">
+        <menu>
+            <item
+                android:id="@+id/mFav"
+                android:title="Favorito"
+                android:icon="@drawable/ic_favorite"/>
+            <item
+                android:id="@+id/mSpam"
+                android:title="Spam"
+                android:icon="@drawable/ic_traffic"/>
+            <item
+                android:id="@+id/mLixeira"
+                android:title="Lixeira"
+                android:icon="@drawable/ic_delete"/>
+        </menu>
+
+    </item>
+
 </menu>

@@ -23,9 +23,20 @@
         android:title="Buscar"
         app:showAsAction="ifRoom" />
     <item
+        android:id="@+id/mAbrir"
+        android:icon="@drawable/ic_open"
+        android:title="Abrir"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mAbrirGrupo"
+        android:icon="@drawable/ic_open"
+        android:title="Abrir Grupo"
+        app:showAsAction="ifRoom" />
+    <item
         android:id="@+id/mSair"
         android:icon="@drawable/ic_exit"
         android:title="Sair"
         app:showAsAction="ifRoom" />
+
 
 </menu>
